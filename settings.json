@@ -1,0 +1,29 @@
+{
+	"type": "html",
+	"client_name": "Rdia",
+	"project_name": "MVD VoiP Landing Page",
+
+	"exclude_from_client_archive": [
+		"drone.json",
+		"csslint.log",
+		"settings.json",
+		"~html-vs-design",
+		"~screenshots",
+		"~QA",
+		"node_modules"
+	],
+
+	"cleanup_in_old_working_copies": [
+		"~screenshots",
+		"~slices",
+		"~html-vs-design",
+		"~QA"
+	],
+
+	"build": "drone",
+
+	"scripts": {
+		"default": "npm start",
+		"build": "npm run build"
+	}
+}
